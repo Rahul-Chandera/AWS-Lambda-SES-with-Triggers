@@ -15,7 +15,7 @@ For sending email from Lambda function, "nodemailer" library is a good option. Y
 Just make sure to replace all the required values in "mailOptions" object.
 
 In my Lambda function, I have set trigger when any specific kind of file has been created into S3 bucket. So here how to do it, open your Lambda function in AWS console. Here you will find "Add triggers" option in "Configuration" section. Select S3 from trigger list.
-![alt text](https://www.dropbox.com/s/jypnpc5bh5tgvt6/Screenshot%202019-02-22%20at%205.43.56%20PM.png?dl=0)
+![alt text](https://raw.githubusercontent.com/Rahul-Chandera/AWS-Lambda-SES-with-Triggers/master/path/to/img/1.png)
 
 
 Once you select S3 trigger from that list, it will ask you to configure triggers. 
