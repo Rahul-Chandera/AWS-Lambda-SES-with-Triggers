@@ -5,20 +5,20 @@ var s3 = new aws.S3();
 exports.handler = function (event, context, callback) {
     // Init SES object
     var ses = new aws.SES({
-        region: '{YOUR AWS REGION KEY}'
+        region: 'YOUR AWS REGION KEY'
     });
 
     // Get file from your S3 bucket which you want to attache with mail
-    getS3File('{S3 BUCKET NAME}', '{FILE NAME}')
+    getS3File('S3 BUCKET NAME', 'FILE NAME')
         .then(function (fileData) {
             var mailOptions = {
-                from: '{FROM EMAIL ADDRESS}',
-                subject: '{SUBJECT OF MAIL}',
-                html: '{EMAIL BODY WITH HTML TEXT}',
-                to: '{TO MAIL ADDRESS}',
+                from: 'FROM EMAIL ADDRESS',
+                subject: 'SUBJECT OF MAIL',
+                html: 'EMAIL BODY WITH HTML TEXT',
+                to: 'TO MAIL ADDRESS',
                 attachments: [
                     {
-                        filename: "{ATTACHED FILE NAME}",
+                        filename: "ATTACHED FILE NAME",
                         content: fileData.Body
                     }
                 ]
