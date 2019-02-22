@@ -21,3 +21,5 @@ So in my case, if there is any pdf report file added into S3 bucket, my Lambda f
 Reference:
 -
 - https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/ses-examples-sending-email.html
+- https://medium.freecodecamp.org/sending-emails-with-amazon-ses-7617e83327b6
+- https://n2ws.com/blog/aws-automation/lambda-function-s3-event-triggers
